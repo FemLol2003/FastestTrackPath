@@ -4,7 +4,7 @@
 #include <stdint.h>
 #include "structures.c"
 #include "consolemanager.c"
-#include <windows.h>
+#include "crossplatformsleep.c"
 
 void tblprint(uint8_t palya[36][30], Coord cord[], int ind, int lastc)
 {

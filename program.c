@@ -2,6 +2,8 @@
 #include <stdint.h>
 #include "libs/printer.c"
 #include "libs/structures.c"
+#include "libs/crossplatformsleep.c"
+
 
 int main()
 {
@@ -238,7 +240,7 @@ int main()
             sols = sols + 1;
             printf("sols: %d               \n", sols);
             if(maxsteps -2 == 32)
-                Sleep(500);
+                crossPlatformSleep(500);
         }
         else if (a[coords[tIndex].y][coords[tIndex].x] < a[coords[tIndex - 1].y][coords[tIndex - 1].x])
         {
